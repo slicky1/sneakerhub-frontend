@@ -17,6 +17,7 @@ export default function Brand({brand, deleteBrand, updateBrand}) {
     function handleUpdate(e){
         e.preventDefault()
         updateBrand(newBrands)
+        setEditMode(false)
     }
     return (
         <div>
@@ -37,7 +38,7 @@ export default function Brand({brand, deleteBrand, updateBrand}) {
                 </>
             }
 
-            <button onClick = {toggleEdit}> Toggle Mode</button>
+            <button onClick = {toggleEdit}> Edit Brand</button>
 
             <br />
         </div>
