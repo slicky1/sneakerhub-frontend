@@ -1,5 +1,6 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import {BASE_URL} from '../source/index.js'
+import Brand from './Brand.js'
 
 
 export default function SneakerContainer() {
@@ -13,13 +14,13 @@ export default function SneakerContainer() {
 
     }, [])
 
-    useEffect(() => {
-        console.log("Brand: ")
-        console.log(brand)
-    }, [brand])
+
+    function showBrands(){
+        return brand.map(brand => < Brand brand = {brand} /> )
+    }
     return (
         <div>
-            
+            {brand && showBrands () }
         </div>
     )
 }
