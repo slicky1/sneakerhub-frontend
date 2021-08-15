@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import SneakerContainer from './components/SneakerContainer';
+import BrandContainer from './components/BrandContainer';
 
 function App() {
   return (
     <div>
         <h1>
           Sneaker Hub
-          <SneakerContainer />
+          <BrandContainer />
         </h1>
     </div>
   );
