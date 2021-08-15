@@ -16,7 +16,15 @@ export default function SneakerContainer() {
 
 
     function showBrands(){
-        return brand.map(brand => < Brand brand = {brand} /> )
+        return brand.map(brand => < Brand brand = {brand} deleteBrand={deleteBrand} key={brand.id}/> )
+    }
+
+    function deleteBrand(brands){
+        fetch(BASE_URL + 'brand/' + brands.id, {
+            method: "DELETE"
+        })
+        const newBrands = brand.filter(brd => brd.id !== brands.id )
+        setBrand(newBrands)
     }
     return (
         <div>
