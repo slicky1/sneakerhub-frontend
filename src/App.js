@@ -4,6 +4,7 @@ import BrandContainer from './components/BrandContainer';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from './components/NavBar';
 import BrandDetails from './components/BrandDetails';
+import HomePage from './components/HomePage';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <NavBar />
         <Switch>
           <Route exact path="/">
-           <h2> Home Page</h2>
+           < HomePage/>
           </Route>
           <Route exact path="/brand">
             <BrandContainer />

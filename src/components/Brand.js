@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Brand({brand, deleteBrand, updateBrand}) {
     const [newBrands, setNewBrand] = useState({...brand})
@@ -22,10 +23,9 @@ export default function Brand({brand, deleteBrand, updateBrand}) {
     return (
         <div>
             <br />
-            <p>{brand.name}</p>
+             <Link to = {`/brand/${brand.id}`}> <p>{brand.name}</p></Link>
 
-            {
-                editMode &&
+            {editMode && (
 
                 <>
                   <button onClick = {() => deleteBrand(brand)}>Delete Brand </button>
@@ -36,7 +36,7 @@ export default function Brand({brand, deleteBrand, updateBrand}) {
                   </form>
 
                 </>
-            }
+            )}
 
             <button onClick = {toggleEdit}> Edit Brand</button>
 
