@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import {BASE_URL} from '../source/index.js'
 import Brand from './Brand.js'
 import BrandForm from './BrandForm.js'
+import '../styles/BrandContainer.css'
 
 
 export default function BrandContainer() {
@@ -70,8 +71,9 @@ export default function BrandContainer() {
         
     return (
         <div>
-            {brand && showBrands () }
-            <BrandForm createBrand={createBrand} />
+            <h2 className="gyms-header">All Brands </h2>
+             <div className = "gym-container" >{brand && showBrands ()} </div>
+            <div className = "form-style"> <BrandForm createBrand={createBrand} /> </div>
         </div>
     )
 }

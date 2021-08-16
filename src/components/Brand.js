@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
+import '../styles/Brand.css'
 
 export default function Brand({brand, deleteBrand, updateBrand}) {
     const [newBrands, setNewBrand] = useState({...brand})
@@ -21,7 +22,8 @@ export default function Brand({brand, deleteBrand, updateBrand}) {
         setEditMode(false)
     }
     return (
-        <div>
+        
+        <div className ="card">
             <br />
              <Link to = {`/brand/${brand.id}`}> <p>{brand.name}</p></Link>
 

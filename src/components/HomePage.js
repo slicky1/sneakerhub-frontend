@@ -4,10 +4,12 @@ import '../styles/HomePage.css'
 export default function HomePage() {
     return (
         <div className="big-image">
+            <div className="overlay">
                 <div>
-                    <h2 className="home-page-header">Home Page</h2>
-                    <p className = "p">Welcome to the Sneaker Hub</p>
+                    <h2> Welcome to THE sneaker Hub</h2>
+                    
                 </div>
+            </div>    
         </div>
        
     )
