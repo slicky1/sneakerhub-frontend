@@ -24,7 +24,7 @@ export default function BrandDetails() {
         <div>
             {brand && (
                     <>
-                        <p>Brand Name: {brand.name}</p>
+                        <p>{brand.name}</p>
                         <h3>Collection</h3>
                         {brand.collections.map(collection => <Collection collection ={collection} />)}
                     </>

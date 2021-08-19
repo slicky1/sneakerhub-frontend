@@ -11,7 +11,6 @@ export default function Brand({brand, deleteBrand, updateBrand}) {
         updateValue[e.target.name] = e.target.value
         setNewBrand({...updateValue})
     }
-
     function toggleEdit(){
         setEditMode(!editMode)
     }

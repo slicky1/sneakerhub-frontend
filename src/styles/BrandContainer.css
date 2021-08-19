@@ -1,10 +1,10 @@
-.gym-container {
+.brand-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.gyms-header {
+.brand-header {
     text-align: center;
 }
 

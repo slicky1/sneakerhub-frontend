@@ -21,7 +21,6 @@ export default function BrandContainer() {
         return brand.map(brand => < Brand brand = {brand} deleteBrand={deleteBrand} updateBrand={updateBrand} key={brand.id}/> )
     }
 
-    // CREATE
 
    // CREATE
 
@@ -58,7 +57,6 @@ export default function BrandContainer() {
               },
             });
         
-            // OPTIMISTIC RENDERING
         
             const newBrands = brand.map((brd) => {
               if (brd.id === brands.id) {
@@ -71,8 +69,8 @@ export default function BrandContainer() {
         
     return (
         <div>
-            <h2 className="gyms-header">All Brands </h2>
-             <div className = "gym-container" >{brand && showBrands ()} </div>
+            <h2 className="brand-header">All Brands </h2>
+             <div className = "brand-container" >{brand && showBrands ()} </div>
             <div className = "form-style"> <BrandForm createBrand={createBrand} /> </div>
         </div>
     )

@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from './components/NavBar';
 import BrandDetails from './components/BrandDetails';
 import HomePage from './components/HomePage';
+import CollectionDetails from './components/CollectionDetails';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path="/brand/:id">
             <BrandDetails />
+          </Route>
+          <Route path ="/collection/:id">
+            <CollectionDetails />
           </Route>
         </Switch>
       </div>

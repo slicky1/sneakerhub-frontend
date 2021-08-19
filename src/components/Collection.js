@@ -1,10 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Collection({ collection }) {
     return (
         <div>
-            <p>Name: {collection.name}</p>
-            <p>BrandID: {collection.brand_id}</p>
+            {/* <p> {collection.name}</p> */}
+            <Link to = {`/collection/${collection.id}`}> <p>{collection.name}</p></Link>
+            {/* <p>BrandID: {collection.brand_id}</p> */}
         </div>
     )
 }
+
