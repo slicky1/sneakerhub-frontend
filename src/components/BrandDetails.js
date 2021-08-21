@@ -21,12 +21,13 @@ export default function BrandDetails() {
     },[brand]);
 
     return (
-        <div>
+        <div className = "collection-container">
             {brand && (
                     <>
-                        <p>{brand.name}</p>
+                        <p className = "brand-head">{brand.name}</p>
                         <h3>Collection</h3>
-                        {brand.collections.map(collection => <Collection collection ={collection} />)}
+                        <div className = "brand-collection"> {brand.collections.map(collection => <Collection collection ={collection} />)} </div>
+                        
                     </>
                 )}
            

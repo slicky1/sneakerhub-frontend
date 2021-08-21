@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import BrandDetails from './components/BrandDetails';
 import HomePage from './components/HomePage';
 import CollectionDetails from './components/CollectionDetails';
+import "./styles/globals.scss";
 
 function App() {
   return (

@@ -1,4 +1,4 @@
-.gym-card {
+.card {
     margin: 1rem;
     padding: 1rem;
     border: 1px solid black;
@@ -6,6 +6,8 @@
     min-height: 15vh;
     background-color: bisque;
 }
+
+.main 
 
 @media (min-width: 576px) {
     .gym-card {
